@@ -1,0 +1,9 @@
+- name: Test vault decryption
+  hosts: 127.0.0.1
+  connection: local
+  vars_files:
+    - group_vars/csrs/vars.yml
+    - group_vars/csrs/vault.yml
+  tasks:
+    - name: Echo vault pw
+      debug: msg={{ ansible_password }}

@@ -1,0 +1,4 @@
+#list of things needed
+#pip install paramiko
+#pip install ansible-pylibssh
+#ansible-galaxy collection install cisco.ios

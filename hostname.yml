@@ -1,0 +1,9 @@
+- name: Changing hostname of device
+  hosts: csrs
+  tasks:
+    - name: Log in to device
+      # debug: msg=" {{ ansible_password }}"
+      cisco.ios.ios_hostname:
+        config:
+          hostname: AlexRouter
+        state: merged

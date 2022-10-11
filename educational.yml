@@ -1,0 +1,17 @@
+
+#Name your task
+- name: Test playbook
+
+#blocks are a group of tasks
+block:
+  tasks: 
+  - name: Test task
+    notify:
+    - Name of Test Handler 
+    #tag this task to be referenced when running playbooks
+    tags: getStarted
+    loop:
+
+#handlers can be called by the 'notify' command    
+handlers:
+  - name: Name of Test Handler
