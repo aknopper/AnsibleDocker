@@ -15,3 +15,6 @@ WORKDIR /app
 COPY . .
 
 RUN pip3 install ansible
+RUN ansible-galaxy collection install -r requirements.yml
+
+CMD python3

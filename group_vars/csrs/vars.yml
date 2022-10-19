@@ -1,4 +1,5 @@
-#variables are needed here. by specifying connection, it doesn't look for a python interpreter. 
+#variables are needed here. by specifying connection, it doesn't look for a python interpreter. Cisco IOS galaxy documentation says this is
+# for use with network_cli
 #network OS was needed after specifying connection
 ansible_connection: ansible.netcommon.network_cli
 ansible_network_os: cisco.ios.ios
