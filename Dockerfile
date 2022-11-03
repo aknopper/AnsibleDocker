@@ -14,7 +14,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip3 install ansible
+#Best practice is to use a requirements file to list your packages
+RUN pip install -r requirements.txt
 RUN ansible-galaxy collection install -r requirements.yml
 
 CMD python3
